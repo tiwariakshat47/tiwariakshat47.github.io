@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<title>Akshat Tiwari</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+
+		nav a:hover {
+  			border: 2px solid white;
+		}
+
+
+
 		body {
 			font-family: Arial, sans-serif;
 			margin: 0;
@@ -67,13 +75,14 @@
 	</style>
 </head>
 <body>
+	
 	<header>
 		<h1>Akshat Tiwari</h1>
 	</header>
 	<nav>
 		<ul>
 			<li><a href="#about" style="color:red;">About</a></li>
-			<li><a href="#portfolio" style="color:red;">Portfolio</a></li>
+			<li><a href="#portfolio" id="portfolio-link" style="color:red;">Portfolio</a></li>
 			<li><a href="#contact" style="color:red;">Contact</a></li>
 		</ul>
 	</nav>
@@ -106,5 +115,19 @@
 			<li>Phone: 669-213-8894</li>
 		</ul>
 	</section>
+
+	<script>
+		
+	</script>
+
+
+<script>
+	const portfolioLink = document.querySelector('#portfolio-link');
+	portfolioLink.addEventListener('click', () => {
+	  alert("portfolio link clicked");
+	});
+  </script>
+
+
 </body>
 </html>
