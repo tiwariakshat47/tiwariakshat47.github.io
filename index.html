@@ -8,9 +8,10 @@
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
+			background-color: #000;
+			color: #fff; /* added this line to make all text white */
 		}
 
-		#test
 		header {
 			background-color: #000000;
 			color: #fff;
@@ -36,7 +37,7 @@
 		}
 
 		nav a {
-			color: #333;
+			color: #fff; /* changed text color to white */
 			text-decoration: none;
 			padding: 10px;
 		}
@@ -54,6 +55,15 @@
 		section h2 {
 			margin-top: 0;
 		}
+
+		section p {
+			color: #fff; /* added this line to make paragraph text white */
+		}
+
+		ul li {
+			color: #fff; /* added this line to make list text white */
+		}
+
 	</style>
 </head>
 <body>
@@ -62,18 +72,17 @@
 	</header>
 	<nav>
 		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about" style="color:red;">About</a></li>
+			<li><a href="#portfolio" style="color:red;">Portfolio</a></li>
+			<li><a href="#contact" style="color:red;">Contact</a></li>
 		</ul>
 	</nav>
 	<section id="about">
 		<h2>About Me</h2>
-		<p>Hi, my name is Akshat Tiwari and I'm a Software Engineer based in San Jose, California. I specialize in Python, HTML, CSS, and JavaScript, and I love creating beautiful and functional websites.</p>
 		<a href="#">
-			<img src="pfp.jpeg" >
-		  
-		  </a>
+			<img src="pfp.jpeg" width="200" height="300" >
+		</a>
+		<p>Hi, my name is Akshat Tiwari and I'm a Software Engineer based in San Jose, California. I specialize in Python, HTML, CSS, and JavaScript, and I love creating beautiful and functional websites.</p>
 	</section>
 	<section id="portfolio">
 		<h2>Portfolio</h2>
